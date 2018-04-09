@@ -1,1 +1,27 @@
 # This file contains recursive sources that require this package
+R-DendSer
+R-ICS
+R-ICSNP
+R-VIM
+R-bayesplot
+R-brms
+R-broom
+R-caret
+R-clue
+R-compositions
+R-cvTools
+R-ddalpha
+R-dendextend
+R-fpc
+R-loo
+R-modelr
+R-mvoutlier
+R-pcaPP
+R-recipes
+R-robCompositions
+R-robustbase
+R-rrcov
+R-rstanarm
+R-seriation
+R-shinystan
+R-tidyverse

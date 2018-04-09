@@ -4,7 +4,7 @@
 #
 Name     : R-matrixStats
 Version  : 0.53.1
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/matrixStats_0.53.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/matrixStats_0.53.1.tar.gz
 Summary  : Functions that Apply to Rows and Columns of Matrices (and to
@@ -32,11 +32,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521174569
+export SOURCE_DATE_EPOCH=1523317372
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521174569
+export SOURCE_DATE_EPOCH=1523317372
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
