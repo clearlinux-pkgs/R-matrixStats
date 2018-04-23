@@ -4,7 +4,7 @@
 #
 Name     : R-matrixStats
 Version  : 0.53.1
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/matrixStats_0.53.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/matrixStats_0.53.1.tar.gz
 Summary  : Functions that Apply to Rows and Columns of Matrices (and to
