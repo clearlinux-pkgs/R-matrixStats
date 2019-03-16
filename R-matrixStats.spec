@@ -4,14 +4,14 @@
 #
 Name     : R-matrixStats
 Version  : 0.54.0
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/matrixStats_0.54.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/matrixStats_0.54.0.tar.gz
-Summary  : Functions that Apply to Rows and Columns of Matrices (and to
+Summary  : Functions that Apply to Rows and Columns of Matrices (and to Vectors)
 Group    : Development/Tools
 License  : Artistic-2.0
-Requires: R-matrixStats-lib
-BuildRequires : clr-R-helpers
+Requires: R-matrixStats-lib = %{version}-%{release}
+BuildRequires : buildreq-R
 
 %description
 No detailed description available
@@ -32,11 +32,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532404698
+export SOURCE_DATE_EPOCH=1552774347
 
 %install
+export SOURCE_DATE_EPOCH=1552774347
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1532404698
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -71,8 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library matrixStats|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  matrixStats || :
 
 
 %files
