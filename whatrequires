@@ -3,5 +3,8 @@ R-Luminescence
 R-SGP
 R-brms
 R-coin
+R-libcoin
 R-loo
 R-robustbase
+R-rstan
+R-shinystan
