@@ -1,10 +1,9 @@
 # This file contains recursive sources that require this package
 R-Luminescence
 R-SGP
+R-StanHeaders
 R-brms
 R-coin
 R-libcoin
 R-loo
 R-robustbase
-R-rstan
-R-shinystan
