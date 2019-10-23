@@ -4,7 +4,7 @@
 #
 Name     : R-matrixStats
 Version  : 0.55.0
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/matrixStats_0.55.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/matrixStats_0.55.0.tar.gz
 Summary  : Functions that Apply to Rows and Columns of Matrices (and to Vectors)
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : Artistic-2.0
 Requires: R-matrixStats-lib = %{version}-%{release}
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 No detailed description available
@@ -32,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1567877305
+export SOURCE_DATE_EPOCH=1571862395
 
 %install
-export SOURCE_DATE_EPOCH=1567877305
+export SOURCE_DATE_EPOCH=1571862395
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
