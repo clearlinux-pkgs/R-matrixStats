@@ -1,5 +1,5 @@
 PKG_NAME := R-matrixStats
-URL = https://cran.r-project.org/src/contrib/matrixStats_0.57.0.tar.gz
+URL = https://cran.r-project.org/src/contrib/matrixStats_0.58.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
