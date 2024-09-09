@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : R-matrixStats
-Version  : 1.4.0
-Release  : 65
-URL      : https://cran.r-project.org/src/contrib/matrixStats_1.4.0.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/matrixStats_1.4.0.tar.gz
+Version  : 1.4.1
+Release  : 66
+URL      : https://cran.r-project.org/src/contrib/matrixStats_1.4.1.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/matrixStats_1.4.1.tar.gz
 Summary  : Functions that Apply to Rows and Columns of Matrices (and to
 Group    : Development/Tools
 License  : Artistic-2.0
@@ -44,10 +44,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1725461017
+export SOURCE_DATE_EPOCH=1725892653
 
 %install
-export SOURCE_DATE_EPOCH=1725461017
+export SOURCE_DATE_EPOCH=1725892653
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
